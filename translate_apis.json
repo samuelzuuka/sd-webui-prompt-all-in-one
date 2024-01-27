@@ -1,5 +1,5 @@
 {
-    "default": "baidu_free",
+    "default": "localai_free",
     "apis": [
         {
             "type": "dont_need_api_key",
@@ -1695,6 +1695,31 @@
                         {
                             "title": "[prompt-all-in-one Wiki] Translation API Description / 翻译接口说明",
                             "url": "https://aiodoc.physton.com/TranslationApiConfiguration.html#translation-api-description"
+                        }
+                    ]
+                },
+                {
+                    "key": "localai_free",
+                    "name": "[Free] [translators] Localai / 本地AI翻译",
+                    "type": "translators",
+                    "translator": "localai",
+                    "concurrent": 1,
+                    "support": {
+                        "zh_CN": "zh",
+                        "en_US": "en"
+                    },
+                    "help": [
+                        {
+                            "title": "Localai/本地AI翻译 - Localai",
+                            "url": "http://localhost:9005/api/translate"
+                        },
+                        {
+                            "title": "[github] translators",
+                            "url": "http://localhost:9005/translate"
+                        },
+                        {
+                            "title": "[prompt-all-in-one Wiki] Translation API Description / 翻译接口说明",
+                            "url": "http://localhost:9005/translate"
                         }
                     ]
                 }

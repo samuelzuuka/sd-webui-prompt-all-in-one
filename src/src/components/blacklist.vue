@@ -2,7 +2,7 @@
     <Transition name="fadeDown">
         <div class="physton-prompt-blacklist" v-if="isOpen" @click="">
             <div class="blacklist-main" @click.stop>
-                <div class="blacklist-body" @click.stop>
+                <div class="blacklist-body" @click.stop style="height:500px;overflow:scroll">
                     <div class="blacklist-desc">1. {{ getLang('blacklist_desc') }}</div>
                     <div class="blacklist-group">
                         <div class="group-title">{{ getLang('prompt_blacklist_list') }}:</div>

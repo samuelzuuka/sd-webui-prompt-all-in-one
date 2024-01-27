@@ -5,7 +5,7 @@
             <div class="format-close" @click="close">
                 <icon-svg name="close"/>
             </div>
-            <div class="format-list" @click.stop>
+            <div class="format-list" @click.stop style="height:500px;overflow:scroll;">
                 <div class="format-item">
                     <input class="format-checkbox" type="checkbox"
                            :checked="autoRemoveSpace"

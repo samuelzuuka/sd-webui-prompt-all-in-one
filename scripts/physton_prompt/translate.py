@@ -5,6 +5,7 @@ from scripts.physton_prompt.get_translate_apis import get_translate_apis, unprot
 from scripts.physton_prompt.translator.alibaba_translator import AlibabaTranslator
 from scripts.physton_prompt.translator.amazon_translator import AmazonTranslator
 from scripts.physton_prompt.translator.baidu_translator import BaiduTranslator
+from scripts.physton_prompt.translator.localai_translator import LocalaiTranslator
 from scripts.physton_prompt.translator.deepl_translator import DeeplTranslator
 from scripts.physton_prompt.translator.google_tanslator import GoogleTranslator
 from scripts.physton_prompt.translator.microsoft_translator import MicrosoftTranslator
@@ -93,6 +94,8 @@ def translate(text, from_lang, to_lang, api, api_config=None):
             translator = DeeplTranslator()
         elif api == 'baidu':
             translator = BaiduTranslator()
+        elif api == 'localai_free':
+            translator = LocalaiTranslator()
         elif api == 'alibaba':
             translator = AlibabaTranslator()
         elif api == 'yandex':
